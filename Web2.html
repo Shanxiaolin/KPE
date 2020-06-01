@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary {
+      outline: none;
+    }
+
+    .text{
+    /* 第一点span是inline元素，不能设置宽高;第二点为了不换行不设置为block。 */
+    display: inline-block;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    width: 10px;
+    height: 10px;
+    border-color: #EA6000;
+    transform: rotate(-135deg);
+    margin-top:20%;
+    margin-left:20%;
+}
+  </style>
+</head>
+
+<body>
+  <!-- 目前只支持chrome和safari -->
+  <details>
+    <summary style="width:200px;height:200px;">测试用例 <span class="text"></span></summary>
+    <p>All pages and graphics on this web site are the property of W3School.
+      </p>
+  </details>
+
+  <script>
+  </script>
+</body>
+
+</html>
